@@ -6,7 +6,11 @@
   </div>
   <div class="form-group">
     <label>Edit Book Genre:</label>
-    <input type="text" [(ngModel)]="book.genre" class="form-control">
+    <select [(ngModel)]="book.genre"class="form-control">
+        <option value="Teens">Teens</option>
+        <option value="Children">Children</option>
+        <option value="Adult">Adult</option>
+    </select>
   </div>
   <div class="form-group">
     <label>Edit Book Content:</label>
