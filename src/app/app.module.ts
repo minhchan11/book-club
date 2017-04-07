@@ -14,6 +14,13 @@ import { BookNewComponent } from './book-new/book-new.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { AdminComponent } from './admin/admin.component';
 
+export const firebaseConfig = {
+  apiKey: masterFirebaseConfig.apiKey,
+  authDomain: masterFirebaseConfig.authDomain,
+  databaseURL: masterFirebaseConfig.databaseURL,
+  storageBucket: masterFirebaseConfig.storageBucket
+};
+
 @NgModule({
   declarations: [
     AppComponent,
