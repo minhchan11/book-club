@@ -8,3 +8,7 @@
   opacity: 0.7;
   color: rgba(84, 124, 85, 0.8) !important;
 }
+
+h3{
+  cursor: pointer;
+}

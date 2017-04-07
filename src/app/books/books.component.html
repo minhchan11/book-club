@@ -10,7 +10,7 @@
 <div *ngFor="let book of allBooks | filter: bookType | async">
   <div [class]="panelColor(book)">
     <div class="panel-heading">
-      <h3 (click)=bookDetail(book.$key)>{{book.title}}</h3>
+    <h3 (click)=bookDetail(book.$key)>{{book.title}}</h3>
     </div>
       <div class="panel-body">
         <h6>Genre: {{book.genre}}</h6>
