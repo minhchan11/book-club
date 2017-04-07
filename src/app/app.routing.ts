@@ -4,6 +4,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { BooksComponent } from './books/books.component';
 import { BookComponent } from './book/book.component';
 import { AdminComponent } from './admin/admin.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
   }
 ];
 

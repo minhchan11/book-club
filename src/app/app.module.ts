@@ -12,6 +12,7 @@ import { BooksComponent } from './books/books.component';
 import { BookComponent } from './book/book.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { AdminComponent } from './admin/admin.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     BooksComponent,
     BookComponent,
     BookEditComponent,
-    AdminComponent
+    AdminComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
