@@ -12,7 +12,7 @@ export class FilterPipe implements PipeTransform {
   constructor(private bookService: BookService, private af:AngularFire){}
 
   transform(value: any, bookType){
-    if(bookType != "all"){
+    if(bookType != "All"){
       var filteredBooks = this.af.database.list('books',{
         query:{
           orderByChild:'genre',

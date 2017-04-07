@@ -1,4 +1,13 @@
-<div *ngFor="let book of allBooks | async">
+<div class="form-group">
+  <label>Filter by book type:</label>
+  <select class="form-control" (change)="filter($event.target.value)">
+    <option value="All">All Books</option>
+    <option value="Teens">Teens</option>
+    <option value="Children">Children</option>
+    <option value="Adult">Adult</option>
+  </select>
+</div>
+<div *ngFor="let book of allBooks | filter: bookType | async">
   <div [class]="panelColor(book)">
     <div class="panel-heading">
       <h3 (click)=bookDetail(book.$key)>{{book.title}}</h3>

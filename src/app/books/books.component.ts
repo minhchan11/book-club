@@ -14,6 +14,7 @@ import { BookService } from '../book.service';
 
 export class BooksComponent implements OnInit {
   allBooks: FirebaseListObservable<any[]>;
+  bookType: string = "All";
   currentRoute = this.router.url;
 
   constructor( private bookService: BookService, private router: Router) { }
@@ -26,6 +27,10 @@ export class BooksComponent implements OnInit {
     this.router.navigate(['books', bookId]);
   }
 
+  filter(option){
+    this.bookType = option;
+  }
+  
   panelColor(book){
     if(book.genre === "Teens"){
       return "panel panel-success";
