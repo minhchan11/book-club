@@ -14,4 +14,8 @@ export class BookService {
     return this.books;
   }
 
+  getBook(bookId: string){
+    return this.af.database.object('books/' + bookId);
+  }
+
 }

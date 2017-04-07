@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Book } from '../book.model';
-import { BookService } from '../book.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Router } from '@angular/router';
 
+import { Book } from '../book.model';
+import { BookService } from '../book.service';
 
 @Component({
   selector: 'app-books',
