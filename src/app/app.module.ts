@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { routing } from './app.routing';
+import { AngularFireModule } from 'angularfire2';
+import { masterFirebaseConfig } from './api-keys';
 
 import { AppComponent } from './app.component';
 import { FilterPipe } from './filter.pipe';
@@ -24,7 +27,9 @@ import { AdminComponent } from './admin/admin.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
