@@ -1,11 +1,22 @@
-<h1>Add a book</h1>
-<label>Book Title:</label>
-<input type="text" #newTitle>
-<label>Book Genre:</label>
-<input type="text" #newGenre>
-<label>Book Content:</label>
-<input type="text" #newContent>
-
-<button (click)="addBook(newTitle.value, newGenre.value, newContent.value); newTitle.value=''; newGenre.value=''; newContent.value=''">Submit</button>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Add a book
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label>Book Title:</label>
+      <input type="text" #newTitle class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Book Genre:</label>
+      <input type="text" #newGenre class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Book Content:</label>
+      <input type="text" #newContent class="form-control">
+    </div>
+    <button (click)="addBook(newTitle.value, newGenre.value, newContent.value); newTitle.value=''; newGenre.value=''; newContent.value=''" class="btn btn-md btn-secondary">Submit</button>
+  </div>
+</div>
 
 <app-books></app-books>

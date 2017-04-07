@@ -26,4 +26,14 @@ export class BooksComponent implements OnInit {
     this.router.navigate(['books', bookId]);
   }
 
+  panelColor(book){
+    if(book.genre === "Teens"){
+      return "panel panel-success";
+    } else if (book.genre === "Children"){
+      return "panel panel-warning"
+    } else {
+      return "panel panel-info"
+    }
+  }
+
 }
