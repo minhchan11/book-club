@@ -1,0 +1,49 @@
+{
+  "books": [
+    {
+      "title": "Harry Potter",
+      "genre": "Teens",
+      "content": "Wizard"
+    },
+    {
+      "title": "Twilight",
+      "genre": "Teens",
+      "content": "Vampire"
+    },
+    {
+      "title": "Descendant",
+      "genre": "Teens",
+      "content": "Evil"
+    },
+    {
+      "title": "Bambi",
+      "genre": "Children",
+      "content": "Cute"
+    },
+    {
+      "title": "Aladdin",
+      "genre": "Children",
+      "content": "Prince"
+    },
+    {
+      "title": "Rapunzel",
+      "genre": "Children",
+      "content": "Princess"
+    },
+    {
+      "title": "A Walk To Remember",
+      "genre": "Adult",
+      "content": "Romance"
+    },
+    {
+      "title": "Da Vinci Code",
+      "genre": "Adult",
+      "content": "Detective"
+    },
+    {
+      "title": "The Great Gatsby",
+      "genre": "Adult",
+      "content": "Drama"
+    }
+  ]
+}
