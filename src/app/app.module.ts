@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { FilterPipe } from './filter.pipe';
 import { BooksComponent } from './books/books.component';
 import { BookComponent } from './book/book.component';
-import { BookNewComponent } from './book-new/book-new.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { AdminComponent } from './admin/admin.component';
 
@@ -27,7 +26,6 @@ export const firebaseConfig = {
     FilterPipe,
     BooksComponent,
     BookComponent,
-    BookNewComponent,
     BookEditComponent,
     AdminComponent
   ],

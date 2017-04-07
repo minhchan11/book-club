@@ -1,3 +1,8 @@
 <div *ngFor="let book of allBooks | async">
   <h3 (click)=bookDetail(book.$key)>{{book.title}}</h3>
+  <div *ngIf="currentRoute === '/admin'">
+    <h4>{{book.genre}}</h4>
+    <h5>{{book.content}}</h5>
+    <app-book-edit [book]="book"></app-book-edit>
+  </div>
 </div>

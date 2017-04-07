@@ -1,3 +1,11 @@
-<p>
-  admin works!
-</p>
+<h1>Add a book</h1>
+<label>Book Title:</label>
+<input type="text" #newTitle>
+<label>Book Genre:</label>
+<input type="text" #newGenre>
+<label>Book Content:</label>
+<input type="text" #newContent>
+
+<button (click)="addBook(newTitle.value, newGenre.value, newContent.value); newTitle.value=''; newGenre.value=''; newContent.value=''">Submit</button>
+
+<app-books></app-books>

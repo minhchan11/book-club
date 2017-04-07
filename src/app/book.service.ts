@@ -18,4 +18,20 @@ export class BookService {
     return this.af.database.object('books/' + bookId);
   }
 
+  addBook(newBook: Book){
+    this.books.push(newBook);
+  }
+
+  editBook(book){
+    var editedBook = this.getBook(book.$key);
+    editedBook.update({title:book.title,
+                       genre: book.genre,
+                       content: book.content
+                        })
+  }
+
+  deleteBook(book){
+    var deletedBook = this.getBook(book.$key);
+    deletedBook.remove();
+  }
 }

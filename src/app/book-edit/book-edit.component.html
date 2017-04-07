@@ -1,3 +1,10 @@
-<p>
-  book-edit works!
-</p>
+<h1>Edit book</h1>
+<label>Edit Book Title:</label>
+<input type="text" [(ngModel)]="book.title">
+<label>Edit Book Genre:</label>
+<input type="text" [(ngModel)]="book.genre">
+<label>Edit Book Content:</label>
+<input type="text" [(ngModel)]="book.content">
+
+<button (click)="editBook(book)">Edit</button>
+<button (click)="deleteBook(book)">Delete</button>
